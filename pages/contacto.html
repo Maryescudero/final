@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>^Formulario-Contacto</title>
+</head>
+
+<body style="background-color: rgb(203, 214, 209);">
+
+    <header style="background-color: rgb(186, 224, 161);" class="header">
+
+
+        <ul class="nav nav-pills">
+            <img src="../assets/images/_hazte_premium_descarga_alta_resolucion_designed_with_EDIT.org.jpg" alt="logo"
+                width="100" height="100">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/contacto.html">contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="../pages/como-comprar.html">Como Comprar</a>
+            </li>
+        </ul>
+
+    </header>
+    <main>
+        <h3>Formulario de Contacto</h3>
+        <div class="formulario">
+            <!--  <form action="./backend/guardarInfo" method="get">-->
+            <form action="">
+                <div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido">
+                </div>
+                <br>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre">
+                </div>
+                <br>
+                <div>
+                    <label for="email">email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="provincia">Provincia:</label>
+                    <select name="Provincia" id="Provincia"> required
+                        <optgroup>
+                            <option value="San Luis"> San Luis</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Cordoba">Cordoba</option>
+                            <option value="Mendoza">Mendoza </option>
+                        </optgroup>
+
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="pais">País:</label>
+                    <select name="pais" id="pais " required>
+                        <optgroup>
+                            <option value="Argebtina">Argentina</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Paraguay">Paraguay</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                    <br>
+                </div>
+                <div>
+                    <input type="checkbox" name="aceptar">acepto las condiciones
+                </div>
+
+                <br>
+                <p>
+                    <input type="submit" value="Enviar datos">
+                </p>
+                <!--  <p><button>Enviar</button></p>-->
+
+
+            </form>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
